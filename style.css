@@ -1,0 +1,33 @@
+:root {
+    --sky-color: #0284c7;
+    --light-gray: #f9fafb;
+    --mid-gray: #a3a3a3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.sidebar {
+    background-color: var(--sky-color);
+    color: var(--light-gray);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.header {
+    background-color: var(--light-gray);
+}
+
+.main-content {
+    background-color: var(--mid-gray);
+}
