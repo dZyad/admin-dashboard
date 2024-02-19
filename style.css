@@ -30,6 +30,7 @@
 
 .logo {
     padding-top: 2rem;
+    padding-bottom: 2rem;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -51,6 +52,7 @@
     text-align: left;
     padding-top: 2rem;
     padding-left: 5rem;
+    gap: 1rem;
 }
 
 ul li {
