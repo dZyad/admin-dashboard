@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --sky-color: #0284c7;
-    --light-gray: #f9fafb;
-    --mid-gray: #a3a3a3;
+    --sky-600: #0284c7;
+    --gray-50: #f9fafb;
+    --gray-950: #030712;
+    --slate-300: #cbd5e1;
 }
 
 * {
@@ -22,8 +23,8 @@
 }
 
 .sidebar {
-    background-color: var(--sky-color);
-    color: var(--light-gray);
+    background-color: var(--sky-600);
+    color: var(--gray-50);
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: auto auto;
@@ -50,7 +51,7 @@
 }
 
 .sidebar .navigation:nth-child(14) {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .sidebar-img {
@@ -72,7 +73,7 @@
 }
 
 .main-content {
-    background-color: var(--mid-gray);
+    background-color: var(--slate-300);
     display: grid;
     grid-template-columns: 3fr 1fr ;
     grid-template-rows: 1fr 1fr;
