@@ -26,46 +26,37 @@
     color: var(--light-gray);
     display: grid;
     grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
 }
 
 .logo {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo h1 {
     font-size: 2rem;
 }
 
-.logo img {
-    height: 3.5rem;
+.logo-img {
+    height: 4rem;
+    align-self: center;
 }
 
-.navigation ul,
-.settings ul {
-    display: grid;
-    justify-content: start;
-    text-align: left;
-    padding-top: 2rem;
-    padding-left: 5rem;
-    gap: 1rem;
-}
-
-ul li {
+.navigation,
+.settings {
     font-size: 1.5rem;
     font-weight: 500;
-    display: flex;
-    align-items: center;
 }
 
-.sidebar>div>ul>li>img {
+.sidebar .navigation:nth-child(14) {
+    margin-bottom: 3rem;
+}
+
+.sidebar-img {
     display: inline-block;
     height: 2rem;
-    padding-right: 1rem;
+    justify-self: end;
 }
 
 .container {
