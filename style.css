@@ -62,14 +62,16 @@
 
 .container {
     display: grid;
-    grid-template-rows: 1fr 6fr;
 }
 
 .header {
     background-color: var(--light-gray);
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    justify-items: start;
+    padding-top: 2rem;
+    padding-left: 2rem;
 }
 
 .main-content {
@@ -87,4 +89,81 @@
 
 .projects > h1 {
     grid-column: 1 / 3;
+}
+
+.searcher {
+    align-self: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-self: stretch;
+    gap: 1rem;
+}
+
+.searcher input {
+    background-color: var(--slate-300);
+    border-radius: 2rem;
+    border: none;
+    padding: 8px;
+    margin-right: 2rem;
+}
+
+.searcher img {
+    height: 2.5rem;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.user-info img {
+    height: 2.5rem;
+}
+
+.greetings {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-self: start;
+}
+
+.greetings img {
+    height: 4rem;
+    grid-row: 1 / 3;
+}
+
+.greetings p {
+    font-size: 0.8rem;
+    font-weight: 900;
+    align-self: self-end;
+}
+
+.greetings p:last-of-type {
+    font-size: 1.5rem;
+    align-self: self-start;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    justify-self: stretch;
+    padding-right: 150px;
+    gap: 10px
+}
+
+.buttons button {
+    color: var(--gray-50);
+    background-color: var(--sky-600);
+    border: none;
+    border-radius: 3rem;
+    padding: 0.5rem;
+
 }
